@@ -1,0 +1,90 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Raleway:wght@100;300;400;500;700&family=Sacramento&display=swap'); */
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:green;
+    z-index: 100px;
+}
+.header .nav-bar{
+    display: flex;
+}
+.header .nav-bar a{
+    flex: 1px;
+    font-size: 22px;
+    text-align: center;
+    line-height:50px; 
+    color: white;   
+}
+.header .nav-bar a:hover{
+    filter: brightness(0.7);
+}
+.header .nav-bar a:nth-child(1){
+    background-color: red;
+}
+.header .nav-bar a:nth-child(2){
+    background-color:lightgreen;
+}
+.header .nav-bar a:nth-child(3){
+    background-color: blue;
+}
+.header .nav-bar a:nth-child(4){
+    background-color:orangered;
+}
+.header .nav-bar a:nth-child(5){
+    background-color:skyblue;
+}
+.container{
+        display: flex;
+        width: 500%;
+        height: 100vh;
+
+}
+.container .main{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+    font-size: 8vw;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+} 
+.container .main:nth-child(1){
+    background-color: red;
+}
+.container .main:nth-child(2){
+    background-color:lightgreen;
+}
+.container .main:nth-child(3){
+    background-color: blue;
+}
+.container .main:nth-child(4){
+    background-color:orangered;
+}
+.container .main:nth-child(5){
+    background-color:skyblue;
+}
+@media(max-width:750px){
+    .header .nav-bar a span {
+ display: none;       
+    }
+}
